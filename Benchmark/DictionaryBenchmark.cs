@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using MyLibrary;
 
 namespace Benchmark
 {
@@ -6,7 +7,7 @@ namespace Benchmark
     [Config(typeof(BenchmarkConfig))]
     public class DictionaryBenchmark
     {
-        MyClass m_instance = new MyClass();
+        private MyClass m_instance = new MyClass();
 
         // https://benchmarkdotnet.org/articles/features/setup-and-cleanup.html
         [GlobalSetup]

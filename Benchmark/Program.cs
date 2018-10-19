@@ -12,6 +12,8 @@ namespace Benchmark
     // http://engineering.grani.jp/entry/2017/07/28/145035
     // http://neue.cc/2017/08/20_557.html
 
+    // Releaseビルドに設定し、デバッグなし実行（Ctrl+F5）で起動して計測します
+
     class Program
     {
         static void Main(string[] args)
