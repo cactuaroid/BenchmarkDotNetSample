@@ -16,7 +16,7 @@ namespace Benchmark
             m_instance.Initialize();
         }
 
-        [Benchmark]
+        [Benchmark(Baseline = true)]
         public int Dictionary()
         {
             return m_instance.GetFromDictionary();
